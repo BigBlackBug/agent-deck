@@ -2105,7 +2105,7 @@ func (h *Home) handleMainKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 // handleConfirmDialogKey handles keys when confirmation dialog is visible
 func (h *Home) handleConfirmDialogKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	switch msg.String() {
-	case "y", "Y":
+	case "y", "Y", "enter":
 		// User confirmed - perform the deletion
 		switch h.confirmDialog.GetConfirmType() {
 		case ConfirmDeleteSession:
